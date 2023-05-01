@@ -89,7 +89,7 @@ public class Save {
 		for (int i = 0; i < mapData.length; i++) {
 			for (int j = 0; j < mapData[i].length; j++) {
 				TileType type = TileType.getType(mapData[i][j]);
-				if (type != TileType.UNKNOWN)
+				if (type != TileType.EMPTY)
 					caseMap.put(new Coordinate(j, i), type);
 			}
 		}

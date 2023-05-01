@@ -9,7 +9,7 @@ public enum TileType {
 	FOREST(		Color.decode("#dcfccf"),	'F'),
 	ROCK(		Color.decode("#e5e5e5"),	'R'),
 	WATER(		Color.decode("#cff2fc"),	'X'), 
-	UNKNOWN(		Color.decode("#000000"),	' ');
+	EMPTY(		Color.DARK_GRAY,	' ');
 	
 	Color color;
 	char letter;
@@ -26,7 +26,7 @@ public enum TileType {
 		case 'P':return GRASSLAND;
 		case 'F':return FOREST;
 		case 'R':return ROCK;
-		default :return UNKNOWN;
+		default :return EMPTY;
 		}
 	}
 }

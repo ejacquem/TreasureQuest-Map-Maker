@@ -75,18 +75,29 @@ public class MenuBar extends JMenuBar implements ActionListener {
 		tileMenu.add(rock);
 		
 		JMenuItem test;
-		test = new JMenuItem("Left_Click   | draw");
-		test.setFont(new Font(Font.MONOSPACED, 1, 12));
+		Font font = new Font(Font.MONOSPACED, 1, 12);
+		test = new JMenuItem("Left_Click   | Draw");
+		test.setFont(font);
 		controlMenu.add(test);
-		test = new JMenuItem("Middle_Click | pick color");
-		test.setFont(new Font(Font.MONOSPACED, 1, 12));
+		test = new JMenuItem("Middle_Click | Pick Color");
+		test.setFont(font);
 		controlMenu.add(test);
-		test = new JMenuItem("Right_Click  | erase");
-		test.setFont(new Font(Font.MONOSPACED, 1, 12));
+		test = new JMenuItem("Right_Click  | Erase");
+		test.setFont(font);
 		controlMenu.add(test);
-		test = new JMenuItem("Shift+Left_Click | move the map");
-		test.setFont(new Font(Font.MONOSPACED, 1, 12));
+		
 		controlMenu.addSeparator();
+		
+		test = new JMenuItem("Shift+Left_Click | Move The Map");
+		test.setFont(font);
+		controlMenu.add(test);
+		
+		test = new JMenuItem("Shift+Scroll     | Change Color");
+		test.setFont(font);
+		controlMenu.add(test);
+		
+		test = new JMenuItem("Ctrl+Scroll      | Change Brush Size");
+		test.setFont(font);
 		controlMenu.add(test);
 		
 		water.addActionListener(this);
